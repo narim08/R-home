@@ -1,0 +1,141 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url('blue_back.png');
+  background-position: center;
+  background-size: 500px;
+}
+
+/* 그리드 영역 스타일 */
+.header {
+  grid-area: header;
+  background-color: #4471ea;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.mainImg {
+  border-radius: 16px;
+  width: 800px;
+  height: 300px;
+  background-color: rgb(237, 244, 255);
+  box-shadow: 5px 5px 8px rgb(145, 145, 183);
+  border: 3px solid #78a7ff;
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.slideBox {
+  margin:0px;
+  padding:5px;
+}
+.slide {
+  min-width: 100%;
+  height: 290px;
+}
+.slideImg {
+  border-radius: 16px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  object-fit: cover;
+  object-position: center 45%;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.0s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.clk {
+  width: 400px;
+  height: 80px;
+  border-radius: 16px;
+  position: absolute;
+  top: 400px;
+  left: 50%;
+  text-align: center;
+  box-shadow: 5px 5px 8px rgb(145, 145, 183);
+  border: 3px solid #78a7ff;
+  z-index: 1;
+}
+.date {
+  font-family: 'Orbit', sans-serif;
+  font-size: 15px;
+  color: #be72d9;
+  z-index: 1;
+}
+.time {
+  font-family: 'Orbit', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #627efc;
+  z-index: 1;
+}
+.op {
+  width: 400px;
+  height: 80px;
+  position: absolute;
+  top: 0px;
+  background-color: rgb(221, 231, 255);
+  border-radius: 16px;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.miniImg {
+  width: 400px;
+  height: 200px;
+  border-radius: 16px;
+  position: absolute;
+  top: 495px;
+  left: 50%;
+  box-shadow: 5px 5px 8px rgb(145, 145, 183);
+  border: 3px solid #78a7ff;
+  background-image: url(b4.png);
+  background-size:cover;
+}
+
+.info {
+  width: 380px;
+  height: 295px;
+  border-radius: 16px;
+  box-shadow: 5px 5px 8px rgb(145, 145, 183);
+  border: 3px solid #78a7ff;
+  position: absolute;
+  top: 400px;
+  left:50%;
+  transform: translateX(-105%);
+  z-index: 1;
+}
+.op2 {
+  width: 380px;
+  height: 295px;
+  position: absolute;
+  top: 0px;
+  background-color: rgb(221, 231, 255);
+  border-radius: 16px;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.ico1 {
+  width: 60px;
+  height: 60px;
+  position:absolute;
+  top: 60px;
+  left: 10px;
+  background-image: url(내pc.png);
+  background-size: cover;
+}
